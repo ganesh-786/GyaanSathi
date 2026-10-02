@@ -161,7 +161,7 @@ const Homepage = () => {
                     Start Your Learning Journey
                   </h3>
                   <p className="text-gray-600 mb-8">
-                    Join thousands of learners and access our premium courses
+                    Create an account to browse the courses and enrol in them
                   </p>
                   <div className="space-y-3">
                     <Link
@@ -221,30 +221,6 @@ const Homepage = () => {
             )}
           </div>
         </section>
-
-        {/* Stats Section */}
-        <section className="py-16 px-6 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md transition-colors duration-500">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-              <StatCard
-                number="10K+"
-                label="Active Learners"
-                color="text-emerald-600"
-              />
-              <StatCard
-                number="500+"
-                label="Expert Courses"
-                color="text-blue-600"
-              />
-              <StatCard
-                number="95%"
-                label="Success Rate"
-                color="text-purple-600"
-              />
-              <StatCard number="24/7" label="Support" color="text-orange-600" />
-            </div>
-          </div>
-        </section>
       </div>
       <ThemeToggle />
     </>
@@ -268,18 +244,5 @@ const FeatureBadge = ({ icon: Icon, label, color }) => {
     </div>
   );
 };
-
-const StatCard = ({ number, label, color }) => (
-  <div className="bg-white/80 dark:bg-gray-900/80 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 backdrop-blur-md transition-colors duration-500">
-    <div
-      className={`text-3xl font-bold ${color} mb-2 transition-colors duration-500`}
-    >
-      {number}
-    </div>
-    <div className="text-gray-600 dark:text-gray-300 font-medium transition-colors duration-500">
-      {label}
-    </div>
-  </div>
-);
 
 export default Homepage;
